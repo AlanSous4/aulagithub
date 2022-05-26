@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="img/uashduas-min.png">
+    <style>
+       
+    .menu > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 3rem;
+    box-sizing: border-box;
+       }
+       
+       
+       body {
+            background-image: url(img/Por\ do\ Sol.jpg);
+            background-repeat: no-repeat;
+       }   
+    img {
+       margin-left: 15%;
+    }
+
+    aside {
+        display: inline-flex;
+    }
+
+    a,menu,ul {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: var(--container-width);
+        margin: 0;
+        padding: 30;
+
+    }
+    h1 {
+        padding: 30;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="top-menu-space"></div>
+
+    <label class="not-visible" for="close-menu">Close Menu</label>
+    <input class="close-menu" type="checkbox" id="close-menu" role="button" aria-label="Close Menu">
+    
+    <aside class="menu">
+      <div>
+        <h1 class="logo">
+          <a onclick="getElementById('close-menu').checked = false;" href="#home">LOGO</a>
+        </h1>
+        <nav>
+          <ul onclick="getElementById('close-menu').checked = false;">
+            <ul>
+              <a href="#intro">intro</a>
+            </ul>
+            <ul>
+              <a href="#top-3">top 3</a>
+            </ul>
+            <ul>
+              <a href="#gallery">gallery</a>
+            </ul>
+            <ul>
+              <a href="#latest-work">work</a>
+            </ul>
+            <ul>
+              <a href="#footer">contact</a>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <section class="section primary-background bg-svg-1">
+        <div id="home"></div>
+        <header id="main-header" class="main-header section-content">
+          <div class="main-header-content">
+    <h1>JANUARY BRINGS US FIREFOX 85</h1>
+
+    <img src="img/Logo .jpg" alt="Logo css">
+    
+    <p>To wrap up January, we are <br> proud to bring you the release <br> of Firefox 85. In this version we <br> are bringing you support for the:<br> focus-visible pseudo-class in<br> CSS and associated devtools,<br> and the complete removal of<br> Flash support from Firefox.</p>
+</body>
+</html>
